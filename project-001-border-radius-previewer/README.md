@@ -1,27 +1,12 @@
-# Project001BorderRadiusPreviewer
+# Visualizador de Border-radius
+**Nível:** 1-Iniciante
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+A propriedade border-radius pode ter vários valores alterados. Visualize como a forma fica ao mudar esses valores.
 
-## Development server
+## Histórias do Usuário
+-   [ ] O usuário pode ver uma caixa na qual a propriedade `border-radius` é aplicada.
+-   [ ] O usuário pode alterar os 4 valores de `border-radius` que são aplicados à caixa (superior esquerdo, superior direito, inferior esquerdo, inferior direito).
+-   [ ] O usuário pode copiar o CSS resultante para a área de transferência.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Recursos adicionais (Bônus)
+-   [ ] O usuário pode alterar todos os 8 valores possíveis do border-radius para criar uma forma complexa.
