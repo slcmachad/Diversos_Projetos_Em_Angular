@@ -2,4 +2,11 @@
 <div class="input-container">
   <label>Top-Left:</label>
   <input type="number" [(ngModel)]="borderRadius.topLeft" (change)="updateCSS()">
+  <label>Top-Right:</label>
+  <input type="number" [(ngModel)]="borderRadius.topRight" (change)="updateCSS()">
+  <label>Bottom-Left:</label>
+  <input type="number" [(ngModel)]="borderRadius.bottomLeft" (change)="updateCSS()">
+  <label>Bottom-Right:</label>
+  <input type="number" [(ngModel)]="borderRadius.bottomRight" (change)="updateCSS()">
 </div>
+<button (click)="copyToClipboard()">Copiar CSS</button>
