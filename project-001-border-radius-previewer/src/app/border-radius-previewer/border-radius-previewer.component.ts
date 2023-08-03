@@ -18,9 +18,21 @@ export class BorderRadiusPreviewerComponent {
 
   updateCSS() {
     this.borderRadiusStyle = `${this.borderRadius.topLeft}px
-                              ${this.borderRadius.topRight}px
-                              ${this.borderRadius.bottomLeft}px
-                              ${this.borderRadius.bottomRight}px`
+    ${this.borderRadius.topRight}px
+    ${this.borderRadius.bottomLeft}px
+    ${this.borderRadius.bottomRight}px`
   }
 
+  copyToClipboard() {
+    const cssToCopy = `border-radius: ${this.borderRadiusStyle}`;
+
+    const tempTextArea = document.createElement('textarea');
+    tempTextArea.value = cssToCopy;
+    document.body.appendChild(tempTextArea);
+
+    tempTextArea.select();
+    document.execCommand('copy');
+
+    document.body.removeChild(tempTextArea);
+  }
 }
