@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class BorderRadiusPreviewerComponent {
 
   borderRadius = {
-    topLeft: 0,
-    topRight: 0,
-    bottomLeft: 0,
-    bottomRight: 0,
+    topLeft: 10,
+    topRight: 25,
+    bottomLeft: 40,
+    bottomRight: 65,
   };
 
   borderRadiusStyle = '0';
