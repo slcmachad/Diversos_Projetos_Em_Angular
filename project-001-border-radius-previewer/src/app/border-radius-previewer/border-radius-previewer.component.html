@@ -8,7 +8,9 @@
       <input class="input-value" type="number" [(ngModel)]="borderRadius.bottomLeft" (change)="updateCSS()">
       <label>Bottom-Left:</label>
     </div>
-    <div class="box" [ngStyle]="{'border-radius': borderRadiusStyle}">Preview Box</div>
+    <div class="box">
+      <div class="box-radius" [ngStyle]="{'border-radius': borderRadiusStyle}">Preview Box</div>
+    </div>
     <div class="Top-Right">
       <label>Top-Right:</label>
       <input class="input-value" type="number" [(ngModel)]="borderRadius.topRight" (change)="updateCSS()">
