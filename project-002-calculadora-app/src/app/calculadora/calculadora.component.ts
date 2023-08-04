@@ -9,6 +9,8 @@ export class CalculadoraComponent {
 
   displayValue = '0';
   currentInput = '0';
+  currentOperator = '';
+  resultado = 0;
 
   appendToDisplay(value: string): void{
     if(this.currentInput.length < 8){
@@ -22,9 +24,14 @@ export class CalculadoraComponent {
   }
 
 
-  performOperation(arg0: string) {
-  throw new Error('Method not implemented.');
+  performOperation(operator: string): void{
+    this.calculate();
+    this.currentOperator = operator;
+    this.currentInput = '0';
+  }
 
+  calculate(): void{
+    throw new Error('Method not implemented.');
   }
 
 }
