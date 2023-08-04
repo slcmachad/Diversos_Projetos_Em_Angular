@@ -1,23 +1,23 @@
 <div class="body-container">
   <div class="input-container">
     <div class="Top-Left">
-      <label>Top-Left:</label>
+      <label>superior esquerdo:</label>
       <input class="input-value" type="number" [(ngModel)]="borderRadius.topLeft" (change)="updateCSS()">
     </div>
     <div class="Bottom-Left">
       <input class="input-value" type="number" [(ngModel)]="borderRadius.bottomLeft" (change)="updateCSS()">
-      <label>Bottom-Left:</label>
+      <label>inferior esquerdo:</label>
     </div>
     <div class="box">
       <div class="box-radius" [ngStyle]="{'border-radius': borderRadiusStyle}">Visualização das bordas em px</div>
     </div>
     <div class="Top-Right">
-      <label>Top-Right:</label>
+      <label>superior direito:</label>
       <input class="input-value" type="number" [(ngModel)]="borderRadius.topRight" (change)="updateCSS()">
     </div>
     <div class="Bottom-Right">
       <input class="input-value" type="number" [(ngModel)]="borderRadius.bottomRight" (change)="updateCSS()">
-      <label>Bottom-Right:</label>
+      <label>inferior direito:</label>
     </div>
   </div>
   <button (click)="copyToClipboard()">Copiar CSS</button>
