@@ -5,8 +5,8 @@
       <input class="input-value" type="number" [(ngModel)]="borderRadius.topLeft" (change)="updateCSS()">
     </div>
     <div class="Bottom-Left">
-      <label>Bottom-Left:</label>
       <input class="input-value" type="number" [(ngModel)]="borderRadius.bottomLeft" (change)="updateCSS()">
+      <label>Bottom-Left:</label>
     </div>
     <div class="box" [ngStyle]="{'border-radius': borderRadiusStyle}">Preview Box</div>
     <div class="Top-Right">
@@ -14,8 +14,8 @@
       <input class="input-value" type="number" [(ngModel)]="borderRadius.topRight" (change)="updateCSS()">
     </div>
     <div class="Bottom-Right">
-      <label>Bottom-Right:</label>
       <input class="input-value" type="number" [(ngModel)]="borderRadius.bottomRight" (change)="updateCSS()">
+      <label>Bottom-Right:</label>
     </div>
   </div>
   <button (click)="copyToClipboard()">Copiar CSS</button>
