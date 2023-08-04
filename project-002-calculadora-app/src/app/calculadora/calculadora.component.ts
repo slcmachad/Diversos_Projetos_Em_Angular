@@ -6,9 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./calculadora.component.css']
 })
 export class CalculadoraComponent {
-limpar() {
-throw new Error('Method not implemented.');
-}
 
   displayValue = '0';
   currentInput = '0';
@@ -37,4 +34,11 @@ throw new Error('Method not implemented.');
     throw new Error('Method not implemented.');
   }
 
+  limpar() {
+    throw new Error('Method not implemented.');
+  }
+
+  clearAll() {
+  throw new Error('Method not implemented.');
+  }
 }
