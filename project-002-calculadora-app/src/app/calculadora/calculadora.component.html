@@ -7,5 +7,27 @@
       <button (click)="appendToDisplay('9')">9</button>
       <button (click)="performOperation('+')">+</button>
     </div>
+    <div class="colunas">
+      <button (click)="appendToDisplay('4')">4</button>
+      <button (click)="appendToDisplay('5')">5</button>
+      <button (click)="appendToDisplay('6')">6</button>
+      <button (click)="performOperation('-')">-</button>
+    </div>
+    <div class="colunas">
+      <button (click)="appendToDisplay('1')">1</button>
+      <button (click)="appendToDisplay('2')">2</button>
+      <button (click)="appendToDisplay('3')">3</button>
+      <button (click)="performOperation('*')">*</button>
+    </div>
+    <div class="colunas">
+      <button (click)="appendToDisplay('0')">0</button>
+      <button (click)="appendToDisplay('.')">.</button>
+      <button (click)="limpar()">C</button>
+      <button (click)="performOperation('/')">/</button>
+    </div>
+    <div class="colunas">
+      <button (click)="calcular()">=</button>
+    </div>
+
   </div>
 </div>
