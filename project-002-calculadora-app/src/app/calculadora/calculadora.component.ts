@@ -28,6 +28,14 @@ export class CalculadoraComponent {
     this.calcular();
     this.operadorAtual = operator;
     this.inputAtual = '0';
+
+    const operacaoAtual = `${this.resultado} ${this.operadorAtual} ${this.inputAtual}`;
+    const ultimoResultado = this.historico.length > 0 ? this.historico[this.historico.length - 1] : '';
+    if (ultimoResultado === operacaoAtual) {
+      this.historico[this.historico.length - 1] = operacaoAtual;
+    } else {
+      this.historico.push(operacaoAtual);
+    }
   }
 
   calcular(): void{
@@ -55,9 +63,6 @@ export class CalculadoraComponent {
         this.resultado = valorAtual;
         break;
     }
-
-    const operacao = `${this.resultado} ${this.operadorAtual} ${this.inputAtual}`;
-    this.historico.push(operacao);
 
     if(this.resultado.toString().length > 8){
       this.displayValue = 'Err';
