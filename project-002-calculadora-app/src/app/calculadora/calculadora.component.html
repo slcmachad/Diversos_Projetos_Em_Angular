@@ -1,7 +1,6 @@
 <div class="calculadora">
-  <div class="historico">
-    <ul *ngFor="let operacao of historico">{{ operacao }}</ul>
-  </div>
+  <input class="historico" type="text" [value]="historico.join('\n')" readonly>
+
   <div class="display">{{ displayValue }}</div>
   <div class="buttons">
     <div class="colunas">
@@ -35,4 +34,3 @@
     </div>
 
   </div>
-</div>
