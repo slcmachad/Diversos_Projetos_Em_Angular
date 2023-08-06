@@ -45,7 +45,7 @@ export class CalculadoraComponent {
       case '/':
         if(valorAtual === 0){
           this.displayValue = 'ERR';
-          this.resetarCalculadora();
+          this.clearAll();
           return
         }
         this.resultado /= valorAtual;
@@ -55,15 +55,20 @@ export class CalculadoraComponent {
         break;
     }
   }
-  resetarCalculadora() {
-    throw new Error('Method not implemented.');
-  }
 
   limpar() {
-    throw new Error('Method not implemented.');
+    if(this.inputAtual.length > 1){
+      this.inputAtual = this.inputAtual.slice(0, 1);
+      this.displayValue = this.inputAtual;
+    }else{
+      this.clearAll();
+    }
   }
 
   clearAll() {
-  throw new Error('Method not implemented.');
+    this.displayValue = '0';
+    this.inputAtual = '0';
+    this.operadorAtual = '';
+    this.resultado = 0;
   }
 }
