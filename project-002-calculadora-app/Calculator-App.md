@@ -1,3 +1,5 @@
+![Em Construção](https://img.shields.io/badge/status-Em%20Constru%C3%A7%C3%A3o-orange)
+
 # Calculadora
 **Nível:** 1-Iniciante
 
@@ -28,4 +30,4 @@ Recursos adicionais
 ### Recursos Adicionais
 -   [] O usuário pode clicar em um botão '+/-' para mudar o sinal do número que está sendo exibido no momento.
 -   [] O usuário pode ver um botão de ponto decimal ('.') no teclado numérico que permite a entrada de números de ponto flutuante com até 3 casas decimais e realizar operações com o máximo de casas decimais inseridas para qualquer número.
--   [] Será possivel visualizar o histórico das operações e tambem foi incluido um botão para limpar apenas o histórico
+-   [] Será possivel visualizar o histórico das operações e tambem foi incluido um botão para limpar apenas o histórico.
