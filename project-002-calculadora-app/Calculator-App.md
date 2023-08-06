@@ -3,6 +3,9 @@
 # Calculadora
 **Nível:** 1-Iniciante
 
+
+🚧 Este projeto está em construção! 🚧
+
 ### Descrição do desafio:
 As calculadoras não são apenas uma das ferramentas mais úteis disponíveis, mas também são uma ótima maneira de entender a interface do usuário (UI) e o processamento de eventos em um aplicativo. Neste problema, você criará uma calculadora que suporta cálculos aritméticos básicos em números inteiros.
 
