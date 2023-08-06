@@ -54,6 +54,15 @@ export class CalculadoraComponent {
         this.resultado = valorAtual;
         break;
     }
+
+    if(this.resultado.toString().length > 8){
+      this.displayValue = 'Err';
+      this.clearAll();
+      return
+    }
+
+    this.inputAtual = this.resultado.toString();
+    this.displayValue = this.inputAtual;
   }
 
   limpar() {
