@@ -11,6 +11,7 @@ export class CalculadoraComponent {
   inputAtual = '0';
   operadorAtual = '';
   resultado = 0;
+  historico: string[] = [];
 
   appendToDisplay(value: string): void{
     if(this.inputAtual.length < 8){
@@ -55,6 +56,9 @@ export class CalculadoraComponent {
         break;
     }
 
+    const operacao = `${this.resultado} ${this.operadorAtual} ${this.inputAtual}`;
+    this.historico.push(operacao);
+
     if(this.resultado.toString().length > 8){
       this.displayValue = 'Err';
       this.clearAll();
@@ -67,11 +71,15 @@ export class CalculadoraComponent {
 
   limpar() {
     if(this.inputAtual.length > 1){
-      this.inputAtual = this.inputAtual.slice(0, 1);
+      this.inputAtual = this.inputAtual.slice(0, -1);
       this.displayValue = this.inputAtual;
     }else{
       this.clearAll();
     }
+  }
+
+  limparHistorico(): void{
+    this.historico = [];
   }
 
   clearAll() {
@@ -79,5 +87,7 @@ export class CalculadoraComponent {
     this.inputAtual = '0';
     this.operadorAtual = '';
     this.resultado = 0;
+    this.limparHistorico();
   }
+
 }

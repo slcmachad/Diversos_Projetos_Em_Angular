@@ -1,4 +1,7 @@
 <div class="calculadora">
+  <div class="historico">
+    <ul *ngFor="let operacao of historico">{{ operacao }}</ul>
+  </div>
   <div class="display">{{ displayValue }}</div>
   <div class="buttons">
     <div class="colunas">
@@ -25,6 +28,7 @@
       <button (click)="limpar()">C</button>
       <button (click)="clearAll()">AC</button>
       <button (click)="performOperation('/')">/</button>
+      <button (click)="limparHistorico()">limparHistorico</button>
     </div>
     <div class="colunas">
       <button (click)="calcular()">=</button>
