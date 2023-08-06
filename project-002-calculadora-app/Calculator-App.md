@@ -30,6 +30,7 @@ Recursos adicionais
 -   [] O usuário pode clicar em um botão '+/-' para mudar o sinal do número que está sendo exibido no momento.
 -   [] O usuário pode ver um botão de ponto decimal ('.') no teclado numérico que permite a entrada de números de ponto flutuante com até 3 casas decimais e realizar operações com o máximo de casas decimais inseridas para qualquer número.
 
+🚧 Este projeto está em construção! 🚧
 ### Recursos Adicionais
 -   [] O usuário pode clicar em um botão '+/-' para mudar o sinal do número que está sendo exibido no momento.
 -   [] O usuário pode ver um botão de ponto decimal ('.') no teclado numérico que permite a entrada de números de ponto flutuante com até 3 casas decimais e realizar operações com o máximo de casas decimais inseridas para qualquer número.
